@@ -396,8 +396,8 @@ namespace SSC::IPC {
           }, { once: true })
 
           if (
-            globalThis.__args.config.webview_watch === true &&
-            globalThis.__args.config.webview_watch_reload !== false
+            globalThis.__args.config.webview_watch === "true" &&
+            globalThis.__args.config.webview_watch_reload !== "false"
           ) {
             globalThis.addEventListener('filedidchange', () => {
               globalThis.location.reload()
